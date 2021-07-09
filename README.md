@@ -1,9 +1,8 @@
 # ci
 
-[![CI Status](https://img.shields.io/travis/qiuzhifei/ci.svg?style=flat)](https://travis-ci.org/qiuzhifei/ci)
-[![Version](https://img.shields.io/cocoapods/v/ci.svg?style=flat)](https://cocoapods.org/pods/ci)
-[![License](https://img.shields.io/cocoapods/l/ci.svg?style=flat)](https://cocoapods.org/pods/ci)
-[![Platform](https://img.shields.io/cocoapods/p/ci.svg?style=flat)](https://cocoapods.org/pods/ci)
+[![CI Status](https://github.com/qiuzhifei/ci-examples/actions/workflows/iOS-test.yml/badge.svg)](https://github.com/QiuZhiFei/ci-examples/actions)
+
+ci examples.
 
 ## Example
 

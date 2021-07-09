@@ -1,0 +1,25 @@
+name: iOS testing
+
+on:
+  push:
+    branches: [ master ]
+  pull_request:
+    branches: [ master ]
+
+jobs:
+  build:
+    name: Build and Test default scheme using any available iPhone simulator
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: setup
+        run: |
+          sh -c "$(curl -fsSL https://raw.githubusercontent.com/BlueIntent/xchelper/main/scripts/install.sh)"
+      - name: lint
+        run: |
+          xchelper swiftlint
+          xchelper pod-lib-lint
+      - name: xcodebuild-test
+        run: |
+          xchelper install
+          xchelper test
