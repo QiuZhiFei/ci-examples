@@ -1,0 +1,13 @@
+use_frameworks!
+
+platform :ios, '9.0'
+
+target 'ci_Example' do
+  pod 'ci', :path => '../'
+
+  target 'ci_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
